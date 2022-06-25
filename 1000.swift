@@ -1,5 +1,3 @@
-//MARK: 2021.6.19 BOJ 1000
-
 import Foundation
 
 let a = readLine()!
