@@ -1,5 +1,7 @@
 import Foundation
 
-let a = readLine()!
-let arr = a.components(separatedBy: " ")
-print(Int(arr[0])! - Int(arr[1])!)
+let a = readLine()
+if let a = a {
+    let arr = a.split(separator: " ").compactMap { Int($0) }
+    print(arr[0] - arr[1])
+}
