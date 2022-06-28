@@ -1,6 +1,6 @@
 import Foundation
 
-let input = readLine()!.components(separatedBy: " ")
-let A = Double(input[0])!
-let B = Double(input[1])!
-print(A/B)
+let input = readLine()
+if let input = input?.split(separator: " ").compactMap { Double($0) } {
+    print(input[0]/input[1])
+}
